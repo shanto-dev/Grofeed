@@ -111,7 +111,7 @@ a {
 }
 
 .sidebar-mini .main-content {
-    padding-left: 90px;
+    padding-left: 78px;
 }
 
 .main-sidebar .sidebar-brand {
@@ -256,6 +256,10 @@ a {
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+.sidebar-style-2 .sidebar-menu li:not(.menu-header) a:hover{
+    color: #4429BA !important;
 }
 
 .main-sidebar .sidebar-menu li.dropdown a img,

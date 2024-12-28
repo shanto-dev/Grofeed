@@ -31,25 +31,146 @@
     .counterPrefix svg {
         width: 20px;
     }
+    .summery_heading {
+        column-gap: 30px;
+    }
+    .main-content section.section {
+        padding-bottom: 45px;
+    }
 }
+
 @media(max-width: 1024px) {
     .main-content {
         padding-left: 23px;
         padding-right: 23px;
         width: 100% !important;
     }
+
     .main-footer {
         padding-left: 30px;
     }
-    .navbar{
+
+    .navbar {
         left: 0;
         padding: 15px 31px 17px 31px;
     }
+
     body.sidebar-gone .navbar_welcome_msg {
         padding-left: 40px;
     }
-    body.sidebar-gone .navbar_cola_btn ,
+
+    body.sidebar-gone .navbar_cola_btn,
     body.sidebar-gone .navbar_cola_btn .collapse-btn {
         display: block !important;
+    }
+
+    .main-content section.section {
+        padding: 30px 20px;
+    }
+
+    .summery_heading {
+        column-gap: 20px;
+    }
+
+    .summery_heading>img {
+        width: 40px;
+    }
+
+    .summery_heading h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .more_summery {
+        font-size: 19px;
+    }
+
+    .navbar {
+        padding: 15px 24px 17px 24px;
+    }
+
+    .navbar_welcome_msg,
+    .navbar_time {
+        font-size: 19px;
+    }
+    .deshboard_topCard .card-thumb {
+        width: 65px;
+    }.deshboard_topCard .card-main-content {
+        width: calc(100% - 65px);
+    }
+}
+
+@media(max-width: 767px) {
+
+    .pd_summary2 .col-lg-10,
+    .pd_summary2 .col-lg-2,
+    .pd_summary .col-lg-10,
+    .pd_summary .col-lg-2 {
+        width: 100%;
+    }
+
+    .acitve_productList ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 4px;
+    }
+
+    .pd_summary2 .col-lg-2 {
+        order: -1;
+    }
+
+    .pd_summary2 {
+        margin-top: 20px;
+    }
+
+    .acitve_productList {
+        margin-bottom: 25px;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+        row-gap: 6px;
+        align-items: flex-start !important;
+    }
+
+    .navbar-nav li:nth-child(3),
+    .navbar-nav li:nth-child(5),
+    .navbar-nav li:nth-child(4) {
+        padding-left: 40px;
+    }
+
+    .main-content {
+        padding-top: 90px;
+    }
+
+    .main-content section.section {
+        padding: 22px 18px;
+    }
+}
+
+@media(max-width: 575px) {
+    .main-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100% !important;
+    }
+
+    .summery_heading {
+        margin-bottom: 15px;
+    }
+
+    .gf_breadcrumb {
+        margin-bottom: 30px;
+    }
+
+    .navbar_welcome_msg,
+    .navbar_time {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .navbar {
+        padding: 15px 10px 17px 10px;
+        height: auto;
     }
 }
