@@ -427,6 +427,7 @@ body.sidebar-gone .main-sidebar {
     padding: 30px;
     min-height: 70vh;
     padding-bottom: 90px;
+    border:1px solid #000000;
 }
 
 /*=============================================== 
