@@ -18,6 +18,7 @@
     justify-content: flex-start;
     align-items: center;
 }
+
 .deshboard_topCard .card-main-content h5 {
     font-style: normal;
     font-weight: 400;
@@ -44,9 +45,46 @@
     color: #000000;
     display: inline-block;
 }
-.deshboard_topCard .card-main-content{
+
+.deshboard_topCard .card-main-content {
     width: calc(100% - 86px);
 }
-.deshboard_topCard .card-thumb{
+
+.deshboard_topCard .card-thumb {
     width: 86px;
+}
+
+
+/* funfact  */
+.counter_item {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    padding: 24px 30px 22px;
+    margin-bottom: 20px;
+    min-height: 188px;
+}
+
+.countfact h3 {
+    margin-bottom: 45px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+}
+
+.counterPrefix {
+    margin-right: 6px;
+}
+
+.counter_item p {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
 }
