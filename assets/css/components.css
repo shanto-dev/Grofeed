@@ -12,6 +12,7 @@
     padding: 9px 16px 7px;
     margin-bottom: 10px;
     overflow: hidden;
+    min-height: 133px;
 }
 
 .deshboard_topCard .card-content {
@@ -111,6 +112,9 @@
     justify-content: flex-start;
     align-items: center;
     column-gap: 8px;
+}
+.deshboard_bottomCard .card-main-content a:hover{
+    color: #5937C8;
 }
 
 .deshboard_bottomCard .card-thumb {
