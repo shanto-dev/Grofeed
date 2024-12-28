@@ -1,3 +1,19 @@
+@media(max-width: 1500px) {
+    .deshboard_topCard .card-thumb {
+        width: 72px;
+    }
+
+    .deshboard_topCard .card-main-content {
+        width: calc(100% - 72px);
+    }
+}
+@media (max-width: 1500px) and (min-width: 1366px) {
+    .deshboard_topCard .card-main-content h5 {
+        margin-right: -24px;
+    }
+}
+
+
 @media(max-width: 1439px) {
     .counter_item {
         padding: 24px 25px 22px;
@@ -31,9 +47,11 @@
     .counterPrefix svg {
         width: 20px;
     }
+
     .summery_heading {
         column-gap: 30px;
     }
+
     .main-content section.section {
         padding-bottom: 45px;
     }
@@ -93,9 +111,12 @@
     .navbar_time {
         font-size: 19px;
     }
+
     .deshboard_topCard .card-thumb {
         width: 65px;
-    }.deshboard_topCard .card-main-content {
+    }
+
+    .deshboard_topCard .card-main-content {
         width: calc(100% - 65px);
     }
 }

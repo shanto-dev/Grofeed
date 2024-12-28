@@ -57,6 +57,10 @@
                 slidesPerView: 3,
                 spaceBetween: 18
             },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 18
+            },
             1600: {
                 slidesPerView: 4,
                 spaceBetween: 24
