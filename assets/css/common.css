@@ -1,0 +1,3 @@
+.main-sidebar, .navbar, .main-content, .main-footer {
+    transition: all 0.5s;
+}

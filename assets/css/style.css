@@ -1,0 +1,422 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    background-color: #f6f6f6;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#app {
+    overflow: hidden;
+}
+
+/*=============================================== 
+/* ==== NavBar Css ==== 
+===============================================*/
+.navbar {
+    height: 60px;
+    left: 264px;
+    right: 0px;
+    position: absolute;
+    z-index: 890;
+    background-color: transparent;
+    padding: 15px 52px 17px 31px;
+    z-index: 30;
+}
+
+.theme-white .navbar {
+    background-color: #F1F1F1;
+}
+
+.sidebar-mini .navbar {
+    left: 65px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    width: 100%;
+}
+
+.navbar-nav .navbar_cola_btn {
+    position: absolute;
+    display: none;
+    transform: 0.3s;
+}
+
+.sidebar-mini .navbar_cola_btn {
+    display: block;
+}
+
+.navbar_welcome_msg,
+.navbar_time {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.sidebar-mini .navbar_welcome_msg {
+    padding-left: 40px;
+}
+
+/*=============================================== 
+/* ==== Main-sidebar Css ==== 
+===============================================*/
+.main-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 264px;
+    height: 100%;
+    z-index: 880;
+    box-sizing: border-box;
+    background: #F1F1F1;
+    border-right: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-mini .main-sidebar {
+    width: 65px;
+    overflow: initial !important;
+    position: absolute;
+    box-shadow: none;
+}
+
+.sidebar-mini .main-content {
+    padding-left: 90px;
+}
+
+.main-sidebar .sidebar-brand {
+    padding: 30px 12px 30px 20px;
+    margin-bottom: 30px;
+}
+
+.main-sidebar .sidebar-brand img {
+    max-width: 100%;
+    width: auto;
+}
+
+.light-sidebar .mine-logo img {
+    height: 35px;
+}
+
+.light-sidebar .collapse-btn {
+    position: relative;
+    top: -3px;
+    padding: 0;
+}
+
+/* menu Wrap */
+.sidebar-menu-wrap {
+    padding: 0 9px;
+    margin-bottom: 14px;
+}
+
+.sidebar-menu-wrap ul li a {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 9px;
+    padding: 15px 35px 15px 63px;
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.sidebar-menu-wrap ul li a>span {
+    font-size: inherit;
+    color: inherit;
+}
+
+.sidebar-menu-wrap ul li a img {
+    position: absolute;
+    width: 41px;
+    height: 41;
+    object-fit: cover;
+    left: 15px;
+    top: 7.5px;
+    border-radius: 50%;
+}
+
+.sidebar-menu-wrap ul li a i {
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    transform: 0.3s;
+}
+
+.sidebar-menu-wrap ul li a.active i {
+    transform: rotateZ(180deg);
+    top: 17px;
+}
+
+.sidebar-mini .sidebar-menu-wrap ul li a {
+    padding: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.sidebar-mini .sidebar-menu-wrap ul li a img {
+    top: 0.8px;
+    left: 1.8px;
+}
+
+/* Sidebar Ul */
+.sidebar-menu {
+    padding: 0 9px 0 34px;
+}
+
+.main-sidebar .sidebar-menu li.menu-header {
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 18px;
+    margin-right: 0px;
+}
+
+.main-sidebar .sidebar-menu li.menu-header span {
+    display: inline-block;
+    background: #F1F1F1;
+    padding-right: 8px;
+    font-family: "Roboto Slab", serif;
+}
+
+.main-sidebar .sidebar-menu li.menu-header::after {
+    position: absolute;
+    content: "";
+    top: 58%;
+    right: 0;
+    background: #000000;
+    width: 60%;
+    height: 1px;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+/* Dropdown  */
+.main-sidebar .sidebar-menu li.dropdown:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.main-sidebar .sidebar-menu li.dropdown {
+    padding: 0 0px 0 28px;
+}
+
+.main-sidebar .sidebar-menu li.dropdown a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 2px 6px 2px 32px;
+    color: #000000;
+    position: relative;
+}
+
+.main-sidebar .sidebar-menu li.dropdown>a:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.main-sidebar .sidebar-menu li.dropdown>a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-sidebar .sidebar-menu li.dropdown a img,
+.main-sidebar .sidebar-menu li.dropdown a i,
+.main-sidebar .sidebar-menu li.dropdown a svg {
+    position: absolute;
+    left: 0px;
+}
+
+
+/* Sidebar Menu bottom */
+.sidebar-menu-bottom {
+    position: relative;
+    padding: 30px 40px 40px 44px;
+}
+
+.sidebar-menu-bottom li a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 3px 6px 3px 32px;
+    color: #000000;
+    position: relative;
+}
+
+.sidebar-menu-bottom li a img,
+.sidebar-menu-bottom li a i,
+.sidebar-menu-bottom li a svg {
+    position: absolute;
+    left: 0px;
+}
+
+.sidebar-menu-bottom li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.sidebar-menu-bottom .logoutBtn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #4429BA;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    padding: 0 30px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-menu-bottom .logoutBtn i{
+    display: none;
+}
+
+.main-sidebar .sidebar-menu li:not(.menu-header) a {
+    color: inherit;
+    font-size: inherit;
+}
+
+.sidebar-style-2 .sidebar-menu li:not(.menu-header) {
+    margin-left: 0;
+}
+
+.light-sidebar:not(.sidebar-mini) .navbar .collapse-btn {
+    display: none;
+}
+
+.light-sidebar:not(.sidebar-mini) .mine-logo {
+    display: none;
+}
+
+.light-sidebar.sidebar-mini .sidebar-brand .collapse-btn,
+.light-sidebar.sidebar-mini .fullLogo {
+    display: none;
+}
+
+
+.sidebar-mini .main-sidebar .sidebar-menu>li.menu-header {
+    padding: 0;
+    font-size: 0;
+    height: 2px;
+}
+.sidebar-mini .main-sidebar .sidebar-menu{
+    padding: 0 9px;
+}
+.sidebar-mini .main-sidebar .sidebar-menu li.dropdown{
+    padding: 0;
+}
+.sidebar-mini .sidebar-menu-wrap ul li a>span,
+.sidebar-mini .sidebar-menu-wrap ul li a>i,
+.sidebar-mini .main-sidebar .sidebar-menu>li>a span {
+    display: none;
+}
+.sidebar-mini .main-sidebar .sidebar-menu>li>a {
+    width: 46px;
+    height: 28px;
+}
+.sidebar-mini .main-sidebar .sidebar-menu>li>a img,
+.sidebar-mini .main-sidebar .sidebar-menu>li>a svg, 
+.sidebar-mini .main-sidebar .sidebar-menu>li>a i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sidebar-mini .main-sidebar .sidebar-menu>li.menu-header::after{
+    width: 100%;
+}
+.sidebar-mini .main-sidebar .sidebar-menu-bottom {
+    padding: 30px 9px;
+}
+.sidebar-mini .main-sidebar .sidebar-menu-bottom li>a span {
+    display: none;
+}
+.sidebar-mini .main-sidebar .sidebar-menu-bottom li a{
+    width: 46px;
+    height: 32px;
+}
+.sidebar-mini .main-sidebar .sidebar-menu-bottom li>a img,
+.sidebar-mini .main-sidebar .sidebar-menu-bottom li>a svg, 
+.sidebar-mini .main-sidebar .sidebar-menu-bottom li>a i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sidebar-mini .main-sidebar .sidebar-menu-bottom li>a.logoutBtn{
+    padding: 0 9px;
+}
+.sidebar-mini .main-sidebar .sidebar-menu-bottom li>a.logoutBtn i{
+    display: block;
+}
+/*=============================================== 
+/* ==== Main-content Css ==== 
+===============================================*/
+.main-content {
+    padding-left: 276px;
+    padding-right: 24px;
+    padding-top: 60px;
+    position: relative;
+    background: #F1F1F1;
+}
+
+.main-content section.section {
+    background: linear-gradient(212.53deg, #FDFFF4 14.72%, #F9FFDE 50.52%, #EEFFF6 55.19%);
+    border-radius: 18px;
+    padding: 30px;
+    min-height: 70vh;
+}
+
+/*=============================================== 
+/* ==== Main-content Css ==== 
+===============================================*/
+.main-footer {
+    padding: 20px 30px 17px 294px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    background: #F1F1F1;
+}
+
+.sidebar-mini .main-footer {
+    padding-left: 94px;
+}

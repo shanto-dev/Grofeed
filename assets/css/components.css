@@ -1,0 +1,52 @@
+/* Card Style 1  */
+.deshboard_topCard {
+    position: relative;
+    overflow: hidden;
+}
+
+.deshboard_topCard .card {
+    background: #E1F5F8;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 9px 16px 7px;
+    margin-bottom: 10px;
+}
+
+.deshboard_topCard .card-content {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.deshboard_topCard .card-main-content h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.deshboard_topCard .card-main-content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.deshboard_topCard .card-main-content a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    display: inline-block;
+}
+.deshboard_topCard .card-main-content{
+    width: calc(100% - 86px);
+}
+.deshboard_topCard .card-thumb{
+    width: 86px;
+}
