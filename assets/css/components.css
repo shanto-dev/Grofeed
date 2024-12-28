@@ -67,6 +67,7 @@
     border: 1px solid #000000;
     margin-bottom: 20px;
     overflow: hidden;
+    min-height: 171px;
 }
 
 .deshboard_bottomCard .card .card-content {

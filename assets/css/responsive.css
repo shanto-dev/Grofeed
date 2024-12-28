@@ -17,3 +17,39 @@
         padding: 5px 20px 5px 25px;
     }
 }
+
+@media(max-width: 1350px) {
+    .counter_item {
+        padding: 24px 12px 22px;
+    }
+
+    .countfact h3 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .counterPrefix svg {
+        width: 20px;
+    }
+}
+@media(max-width: 1024px) {
+    .main-content {
+        padding-left: 23px;
+        padding-right: 23px;
+        width: 100% !important;
+    }
+    .main-footer {
+        padding-left: 30px;
+    }
+    .navbar{
+        left: 0;
+        padding: 15px 31px 17px 31px;
+    }
+    body.sidebar-gone .navbar_welcome_msg {
+        padding-left: 40px;
+    }
+    body.sidebar-gone .navbar_cola_btn ,
+    body.sidebar-gone .navbar_cola_btn .collapse-btn {
+        display: block !important;
+    }
+}

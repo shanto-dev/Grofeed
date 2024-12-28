@@ -31,11 +31,15 @@
                 spaceBetween: 20
             },
             768: {
-                slidesPerView: 2,
-                spaceBetween: 24
+                slidesPerView: 3,
+                spaceBetween: 18
             },
-            992: {
-                slidesPerView: 4,
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 18
+            },
+            1366: {
+                slidesPerView: 3,
                 spaceBetween: 18
             },
         }
@@ -63,7 +67,11 @@
                 slidesPerView: 2,
                 spaceBetween: 24
             },
-            992: {
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 18
+            },
+            1366: {
                 slidesPerView: 3,
                 spaceBetween: 18
             },
