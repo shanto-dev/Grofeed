@@ -417,6 +417,7 @@ a {
     border-radius: 18px;
     padding: 30px;
     min-height: 70vh;
+    padding-bottom: 90px;
 }
 
 /*=============================================== 
@@ -591,4 +592,33 @@ a {
 
 .pd_summary2 .col-lg-10 {
     width: calc(100% - 238px);
+}
+
+
+/* Product Row two  */
+.product_row_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_row_heading h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.product_row_heading a {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.product_row_heading a:hover {
+    color: #4429BA;
 }

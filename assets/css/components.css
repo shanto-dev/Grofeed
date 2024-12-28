@@ -54,6 +54,77 @@
     width: 86px;
 }
 
+/* Bottom Card */
+.deshboard_bottomCard {
+    position: relative;
+    overflow: hidden;
+}
+
+.deshboard_bottomCard .card {
+    padding: 14px 10px 12px 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.deshboard_bottomCard .card .card-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.deshboard_bottomCard .card-main-content {
+    width: calc(100% - 140px);
+}
+
+.deshboard_bottomCard .card-main-content h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.deshboard_bottomCard .card-main-content p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0000F5;
+    margin-bottom: 22px;
+}
+
+.deshboard_bottomCard .card-main-content a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.deshboard_bottomCard .card-thumb {
+    width: 140px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.deshboard_bottomCard .card-thumb img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
 
 /* funfact  */
 .counter_item {

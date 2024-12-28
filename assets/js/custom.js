@@ -9,41 +9,69 @@
                 $sidebar.slideToggle(300);
             }
         });
+    });
 
 
-        var blogSlider = new Swiper(".card_swiper1", {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            // autoplay: {
-            //     delay: 3100,
-            //     disableOnInteraction: false,
-            // },
-            breakpoints: {
-                480: {
-                    slidesPerView: 1,
-                    spaceBetween: 15
-                },
-                576: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 24
-                },
-                992: {
-                    slidesPerView: 4,
-                    spaceBetween: 18
-                },
-            }
-        });
+    var pdSlider = new Swiper(".card_swiper1", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        // autoplay: {
+        //     delay: 3100,
+        //     disableOnInteraction: false,
+        // },
+        breakpoints: {
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            },
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 24
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 18
+            },
+        }
+    });
 
+    var pdSlider2 = new Swiper(".card_swiper2", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        // autoplay: {
+        //     delay: 3100,
+        //     disableOnInteraction: false,
+        // },
+        breakpoints: {
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            },
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 24
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 18
+            },
+        }
     });
     /**==========================
-         *02. FunFact 
-        ===========================*/
+     *02. FunFact 
+    ===========================*/
     $(".countfact").appear();
     $(document.body).on("appear", ".countfact", function (e, $affected) {
         $affected.each(function () {
