@@ -32,10 +32,10 @@
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
-        // autoplay: {
-        //     delay: 3100,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 3100,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             480: {
                 slidesPerView: 1,
@@ -81,10 +81,10 @@
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
-        // autoplay: {
-        //     delay: 3100,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 3100,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             480: {
                 slidesPerView: 1,
