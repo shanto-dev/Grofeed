@@ -116,38 +116,5 @@
             },
         }
     });
-    /**==========================
-     *02. FunFact 
-    ===========================*/
-    $(".countfact").appear();
-    $(document.body).on("appear", ".countfact", function (e, $affected) {
-        $affected.each(function () {
-            var $this = $(this);
-            if (!$this.hasClass("appeared")) {
-                jQuery({
-                    Counter: 0
-                }).animate({
-                    Counter: $this.attr("data-count")
-                }, {
-                    duration: 3000,
-                    easing: "swing",
-                    step: function () {
-                        var num = Math.ceil(this.Counter).toString();
-                        if (Number(num) > 999) {
-                            while (/(\d+)(\d{3})/.test(num)) {
-                                num = num.replace(/(\d+)(\d{3})/, '<span class="count-span">' + "$1" + "</span>" + "$2");
-                            }
-                        }
-                        if ($this.hasClass("hasFraction")) {
-                            var num = Math.abs(this.Counter);
-                            num = num.toFixed(1).toString();
-                        }
-                        $(".counter", $this).html(num);
-                    },
-                });
-                $this.addClass("appeared");
-            }
-        });
-    });
 
 })(jQuery);
