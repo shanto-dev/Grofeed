@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Grofeed - Admin Dashboard Template</title>
+
+    <!-- Favicon  -->
+    <link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.png' />
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/bundle/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontAwesome.css">
+    <link rel="stylesheet" href="assets/bundle/swiper/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div id="app">
+        <div class="main-wrapper main-wrapper-1 product_page">
+            <nav class="navbar">
+                <ul class="navbar-nav mr-3 d-flex justify-content-between align-items-center">
+                    <li class="navbar_cola_btn"><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 18V16H18V18H0ZM0 10V8H18V10H0ZM0 2V0H18V2H0Z" fill="black" /></svg></a> </li>
+                    <li class="navbar_welcome_msg">Hello Good Morning Stock Bazaar Academy </li>
+                    <li class="navbar_time">Date &Time : <span id="datetime"></span></li>
+                </ul>
+            </nav>
+            <div class="main-sidebar sidebar-style-2">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand d-flex justify-content-between align-items-center">
+                        <a class="fullLogo" href="index.html"> <img alt="image" src="assets/images/logo.svg" class="header-logo" />
+                        </a>
+                        <a class="mine-logo" href="index.html"> <img alt="image" src="assets/images/mini-logo.png" class="header-logo" />
+                        </a>
+
+                        <span><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 18V16H18V18H0ZM0 10V8H18V10H0ZM0 2V0H18V2H0Z" fill="black" /></svg></a></span>
+                    </div>
+                    <div class="sidebar-menu-wrap">
+                        <ul>
+                            <li><a class="sidebar_menuToggle" href="#"><img src="assets/images/admin.png" alt="Grofeed"><span>Trading Guru</span><i class="fas fa-angle-down"></i></a></li>
+                        </ul>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li class="menu-header"><span>Daily Operation</span></li>
+                        <li class="dropdown active">
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/dashboard.svg" alt="Grofeed"><span>Dashboard</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/product.svg" alt="Grofeed"><span>Product</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/audience.svg" alt="Grofeed"><span>Audience</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/wallet.svg" alt="Grofeed"><span>Earning Wallet</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/redemption.svg" alt="Grofeed"><span>Redemption </span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/redempton-status.svg" alt="Grofeed"><span>Redemption Status </span></a>
+                        </li>
+                        <li class="menu-header"><span>Solutions</span></li>
+                        <li class="dropdown">
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/dribbble.svg" alt="Grofeed"><span>Web design </span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/web-dev.svg" alt="Grofeed"><span>Web Development </span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/web-dev.svg" alt="Grofeed"><span>Digital Marketing </span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/wallet.svg" alt="Grofeed"><span>Earning Wallet</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/windows.svg" alt="Grofeed"><span>ERP Solution </span></a>
+                        </li>
+                        <li class="menu-header"><span>Explore Feature</span></li>
+                        <li class="dropdown">
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/payroll.svg" alt="Grofeed"><span>Employee Payroll</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/attandance.svg" alt="Grofeed"><span>Employee Attandance</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/telecaller-crm.svg" alt="Grofeed"><span>Telecaller Crm</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/payout.svg" alt="Grofeed"><span>Vendor payout</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/invoices.svg" alt="Grofeed"><span>Invoices</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/billings.svg" alt="Grofeed"><span>Billings</span></a>
+                        </li>
+                        <li class="menu-header"><span>Skills Development</span></li>
+                        <li class="dropdown">
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/graphic-ds.svg" alt="Grofeed"><span>Graphic designing</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/graphic-ds.svg" alt="Grofeed"><span>Meta Ads Learning</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/graphic-ds.svg" alt="Grofeed"><span>AI Tools Learning</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/graphic-ds.svg" alt="Grofeed"><span>Video Editing tools</span></a>
+                        </li>
+                        <li class="menu-header"><span>Finance Solutions</span></li>
+                        <li class="dropdown">
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/loans-meal.svg" alt="Grofeed"><span>Loans Mela</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/insurance.svg" alt="Grofeed"><span>Insurance</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/credit-card.svg" alt="Grofeed"><span>Credit Card</span></a>
+                            <a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/investment.svg" alt="Grofeed"><span>Investment</span></a>
+                        </li>
+
+                    </ul>
+                    <div class="sidebar-menu-bottom">
+                        <ul>
+                            <li class="menu-item"><a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/grofeed-club.svg" alt="Grofeed"><span>Grofeed Club</span></a></li>
+                            <li class="menu-item"><a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/notification.svg" alt="Grofeed"><span>Notification</span></a></li>
+                            <li class="menu-item"><a href="index.html" class="nav-link"><img src="assets/images/sidebar-iocns/support.svg" alt="Grofeed"><span>Support</span></a></li>
+
+                            <li class="menu-item text-center"><a class="logoutBtn" href="index.html" class="nav-link"><i class="fas fa-right-from-bracket"></i><span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+
+                <div class="row mt-4 mb-5">
+                    <div class="col-md-7">
+                        <ul class="gf_breadcrumb">
+                            <li>
+                                <a href="index.html"><svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75004 23.7083H8.12504V14.9583H16.875V23.7083H21.25V10.5833L12.5 4.02083L3.75004 10.5833V23.7083ZM0.833374 26.625V9.125L12.5 0.375L24.1667 9.125V26.625H13.9584V17.875H11.0417V26.625H0.833374Z" fill="black" /></svg></a>
+                            </li>
+                            <li class="seperator">/</li>
+                            <li>Manage Profile</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 text-end">
+                        <div class="setting_product">
+                            <a class="creat_pd_btn" href="jabascript:void(0);">+ Create Product</a>
+                            <ul>
+                                <li>
+                                    <a href="jabascript:void(0);"><svg width="39" height="35" viewBox="0 0 39 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="39" height="35" rx="9" fill="url(#pattern0_1_12)" />
+                                            <defs>
+                                                <pattern id="pattern0_1_12" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                    <use xlink:href="#image0_1_12" transform="matrix(0.0208333 0 0 0.0232143 0 -0.0571429)" />
+                                                </pattern>
+                                                <image id="image0_1_12" width="48" height="48" xlink:href="data:image/png;base64,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" />
+                                            </defs>
+                                        </svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <section class="section product_section">
+                    <div class="product_grid">
+                        <div class="row">
+                            <div class="col-md-12 mb-5">
+                                <div class="product_head text-center">
+                                    <h2>What you want Create today ?</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-3 gy-4">
+                            <!-- card item  -->
+                            <div class="col-xl-3 col-lg-4 col-md-3 col-sm-2">
+                                <div class="product_card_item">
+                                    <div class="product_thumb">
+                                        <img src="assets/images/products/pd-g-1.svg" alt="Grofeed">
+                                    </div>
+                                    <div class="product_cnt">
+                                        <div class="product_cnt_text">
+                                            <h3><a href="#">Locked Massage</a></h3>
+                                            <p>Create Pay-to-Unlock message. Sell digital content, secret text and more.</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <a class="pd_remrbtn" href="#">
+                                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.4097 9.26408L13.2563 11.424L15.723 13.8868L9.25547 13.8943L9.25903 16.9764L15.7266 16.9689L13.2656 19.4374L15.4239 21.5924L21.5764 15.4211L15.4097 9.26408ZM15.399 0.017853C17.5292 0.0153905 19.5315 0.417599 21.406 1.22448C23.2804 2.03136 24.9114 3.12746 26.2989 4.51279C27.6864 5.89812 28.7855 7.52779 29.5961 9.40178C30.4067 11.2758 30.8132 13.2787 30.8157 15.4104C30.8181 17.5422 30.4162 19.546 29.61 21.4219C28.8037 23.2977 27.7084 24.9299 26.3241 26.3185C24.9398 27.707 23.3114 28.8069 21.4388 29.6181C19.5662 30.4293 17.5648 30.8361 15.4346 30.8386C13.3044 30.8411 11.3021 30.4389 9.42765 29.632C7.55319 28.8251 5.9222 27.729 4.5347 26.3437C3.1472 24.9583 2.04814 23.3287 1.23753 21.4547C0.426926 19.5807 0.0203897 17.5778 0.0179254 15.446C0.0154611 13.3143 0.417366 11.3104 1.22364 9.43458C2.02991 7.55872 3.1252 5.92652 4.50949 4.53798C5.89379 3.14945 7.52223 2.04957 9.39483 1.23836C11.2674 0.427152 13.2688 0.0203154 15.399 0.017853ZM15.4026 3.09993C11.9635 3.1039 9.0519 4.30157 6.66783 6.69294C4.28377 9.08431 3.09372 12.0008 3.0977 15.4425C3.10168 18.8841 4.29846 21.7979 6.68805 24.1837C9.07764 26.5696 11.992 27.7605 15.4311 27.7565C18.8701 27.7526 21.7817 26.5549 24.1658 24.1635C26.5498 21.7721 27.7399 18.8556 27.7359 15.414C27.7319 11.9723 26.5351 9.05859 24.1456 6.67274C21.756 4.28689 18.8416 3.09595 15.4026 3.09993Z" fill="black" /></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card item  -->
+                            <div class="col-xl-3 col-lg-4 col-md-3 col-sm-2">
+                                <div class="product_card_item">
+                                    <div class="product_thumb">
+                                        <img src="assets/images/products/pd-g-2.svg" alt="Grofeed">
+                                    </div>
+                                    <div class="product_cnt">
+                                        <div class="product_cnt_text">
+                                            <h3><a href="#">Payment Page</a></h3>
+                                            <p>Create a own Payment page look Like a E-com store and Sell & Earn more.</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <a class="pd_remrbtn" href="#">
+                                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.4097 9.26408L13.2563 11.424L15.723 13.8868L9.25547 13.8943L9.25903 16.9764L15.7266 16.9689L13.2656 19.4374L15.4239 21.5924L21.5764 15.4211L15.4097 9.26408ZM15.399 0.017853C17.5292 0.0153905 19.5315 0.417599 21.406 1.22448C23.2804 2.03136 24.9114 3.12746 26.2989 4.51279C27.6864 5.89812 28.7855 7.52779 29.5961 9.40178C30.4067 11.2758 30.8132 13.2787 30.8157 15.4104C30.8181 17.5422 30.4162 19.546 29.61 21.4219C28.8037 23.2977 27.7084 24.9299 26.3241 26.3185C24.9398 27.707 23.3114 28.8069 21.4388 29.6181C19.5662 30.4293 17.5648 30.8361 15.4346 30.8386C13.3044 30.8411 11.3021 30.4389 9.42765 29.632C7.55319 28.8251 5.9222 27.729 4.5347 26.3437C3.1472 24.9583 2.04814 23.3287 1.23753 21.4547C0.426926 19.5807 0.0203897 17.5778 0.0179254 15.446C0.0154611 13.3143 0.417366 11.3104 1.22364 9.43458C2.02991 7.55872 3.1252 5.92652 4.50949 4.53798C5.89379 3.14945 7.52223 2.04957 9.39483 1.23836C11.2674 0.427152 13.2688 0.0203154 15.399 0.017853ZM15.4026 3.09993C11.9635 3.1039 9.0519 4.30157 6.66783 6.69294C4.28377 9.08431 3.09372 12.0008 3.0977 15.4425C3.10168 18.8841 4.29846 21.7979 6.68805 24.1837C9.07764 26.5696 11.992 27.7605 15.4311 27.7565C18.8701 27.7526 21.7817 26.5549 24.1658 24.1635C26.5498 21.7721 27.7399 18.8556 27.7359 15.414C27.7319 11.9723 26.5351 9.05859 24.1456 6.67274C21.756 4.28689 18.8416 3.09595 15.4026 3.09993Z" fill="black" /></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card item  -->
+                            <div class="col-xl-3 col-lg-4 col-md-3 col-sm-2">
+                                <div class="product_card_item">
+                                    <div class="product_thumb">
+                                        <img src="assets/images/products/pd-g-3.svg" alt="Grofeed">
+                                    </div>
+                                    <div class="product_cnt">
+                                        <div class="product_cnt_text">
+                                            <h3><a href="#">Launch Course</a></h3>
+                                            <p>Sell access to your video collection or online classes.</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <a class="pd_remrbtn" href="#">
+                                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.4097 9.26408L13.2563 11.424L15.723 13.8868L9.25547 13.8943L9.25903 16.9764L15.7266 16.9689L13.2656 19.4374L15.4239 21.5924L21.5764 15.4211L15.4097 9.26408ZM15.399 0.017853C17.5292 0.0153905 19.5315 0.417599 21.406 1.22448C23.2804 2.03136 24.9114 3.12746 26.2989 4.51279C27.6864 5.89812 28.7855 7.52779 29.5961 9.40178C30.4067 11.2758 30.8132 13.2787 30.8157 15.4104C30.8181 17.5422 30.4162 19.546 29.61 21.4219C28.8037 23.2977 27.7084 24.9299 26.3241 26.3185C24.9398 27.707 23.3114 28.8069 21.4388 29.6181C19.5662 30.4293 17.5648 30.8361 15.4346 30.8386C13.3044 30.8411 11.3021 30.4389 9.42765 29.632C7.55319 28.8251 5.9222 27.729 4.5347 26.3437C3.1472 24.9583 2.04814 23.3287 1.23753 21.4547C0.426926 19.5807 0.0203897 17.5778 0.0179254 15.446C0.0154611 13.3143 0.417366 11.3104 1.22364 9.43458C2.02991 7.55872 3.1252 5.92652 4.50949 4.53798C5.89379 3.14945 7.52223 2.04957 9.39483 1.23836C11.2674 0.427152 13.2688 0.0203154 15.399 0.017853ZM15.4026 3.09993C11.9635 3.1039 9.0519 4.30157 6.66783 6.69294C4.28377 9.08431 3.09372 12.0008 3.0977 15.4425C3.10168 18.8841 4.29846 21.7979 6.68805 24.1837C9.07764 26.5696 11.992 27.7605 15.4311 27.7565C18.8701 27.7526 21.7817 26.5549 24.1658 24.1635C26.5498 21.7721 27.7399 18.8556 27.7359 15.414C27.7319 11.9723 26.5351 9.05859 24.1456 6.67274C21.756 4.28689 18.8416 3.09595 15.4026 3.09993Z" fill="black" /></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card item  -->
+                            <div class="col-xl-3 col-lg-4 col-md-3 col-sm-2">
+                                <div class="product_card_item">
+                                    <div class="product_thumb">
+                                        <img src="assets/images/products/pd-g-4.svg" alt="Grofeed">
+                                    </div>
+                                    <div class="product_cnt">
+                                        <div class="product_cnt_text">
+                                            <h3><a href="#">Subscription Package</a></h3>
+                                            <p>Start a membership business on Telegram, Discord, or WhatsApp.</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <a class="pd_remrbtn" href="#">
+                                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.4097 9.26408L13.2563 11.424L15.723 13.8868L9.25547 13.8943L9.25903 16.9764L15.7266 16.9689L13.2656 19.4374L15.4239 21.5924L21.5764 15.4211L15.4097 9.26408ZM15.399 0.017853C17.5292 0.0153905 19.5315 0.417599 21.406 1.22448C23.2804 2.03136 24.9114 3.12746 26.2989 4.51279C27.6864 5.89812 28.7855 7.52779 29.5961 9.40178C30.4067 11.2758 30.8132 13.2787 30.8157 15.4104C30.8181 17.5422 30.4162 19.546 29.61 21.4219C28.8037 23.2977 27.7084 24.9299 26.3241 26.3185C24.9398 27.707 23.3114 28.8069 21.4388 29.6181C19.5662 30.4293 17.5648 30.8361 15.4346 30.8386C13.3044 30.8411 11.3021 30.4389 9.42765 29.632C7.55319 28.8251 5.9222 27.729 4.5347 26.3437C3.1472 24.9583 2.04814 23.3287 1.23753 21.4547C0.426926 19.5807 0.0203897 17.5778 0.0179254 15.446C0.0154611 13.3143 0.417366 11.3104 1.22364 9.43458C2.02991 7.55872 3.1252 5.92652 4.50949 4.53798C5.89379 3.14945 7.52223 2.04957 9.39483 1.23836C11.2674 0.427152 13.2688 0.0203154 15.399 0.017853ZM15.4026 3.09993C11.9635 3.1039 9.0519 4.30157 6.66783 6.69294C4.28377 9.08431 3.09372 12.0008 3.0977 15.4425C3.10168 18.8841 4.29846 21.7979 6.68805 24.1837C9.07764 26.5696 11.992 27.7605 15.4311 27.7565C18.8701 27.7526 21.7817 26.5549 24.1658 24.1635C26.5498 21.7721 27.7399 18.8556 27.7359 15.414C27.7319 11.9723 26.5351 9.05859 24.1456 6.67274C21.756 4.28689 18.8416 3.09595 15.4026 3.09993Z" fill="black" /></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card item  -->
+                            <div class="col-xl-3 col-lg-4 col-md-3 col-sm-2">
+                                <div class="product_card_item">
+                                    <div class="product_thumb">
+                                        <img src="assets/images/products/pd-g-5.svg" alt="Grofeed">
+                                    </div>
+                                    <div class="product_cnt">
+                                        <div class="product_cnt_text">
+                                            <h3><a href="#">Event & Webinar</a></h3>
+                                            <p>Set up a new 1-on-1 session o offer to your visitors/audience.</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <a class="pd_remrbtn" href="#">
+                                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.4097 9.26408L13.2563 11.424L15.723 13.8868L9.25547 13.8943L9.25903 16.9764L15.7266 16.9689L13.2656 19.4374L15.4239 21.5924L21.5764 15.4211L15.4097 9.26408ZM15.399 0.017853C17.5292 0.0153905 19.5315 0.417599 21.406 1.22448C23.2804 2.03136 24.9114 3.12746 26.2989 4.51279C27.6864 5.89812 28.7855 7.52779 29.5961 9.40178C30.4067 11.2758 30.8132 13.2787 30.8157 15.4104C30.8181 17.5422 30.4162 19.546 29.61 21.4219C28.8037 23.2977 27.7084 24.9299 26.3241 26.3185C24.9398 27.707 23.3114 28.8069 21.4388 29.6181C19.5662 30.4293 17.5648 30.8361 15.4346 30.8386C13.3044 30.8411 11.3021 30.4389 9.42765 29.632C7.55319 28.8251 5.9222 27.729 4.5347 26.3437C3.1472 24.9583 2.04814 23.3287 1.23753 21.4547C0.426926 19.5807 0.0203897 17.5778 0.0179254 15.446C0.0154611 13.3143 0.417366 11.3104 1.22364 9.43458C2.02991 7.55872 3.1252 5.92652 4.50949 4.53798C5.89379 3.14945 7.52223 2.04957 9.39483 1.23836C11.2674 0.427152 13.2688 0.0203154 15.399 0.017853ZM15.4026 3.09993C11.9635 3.1039 9.0519 4.30157 6.66783 6.69294C4.28377 9.08431 3.09372 12.0008 3.0977 15.4425C3.10168 18.8841 4.29846 21.7979 6.68805 24.1837C9.07764 26.5696 11.992 27.7605 15.4311 27.7565C18.8701 27.7526 21.7817 26.5549 24.1658 24.1635C26.5498 21.7721 27.7399 18.8556 27.7359 15.414C27.7319 11.9723 26.5351 9.05859 24.1456 6.67274C21.756 4.28689 18.8416 3.09595 15.4026 3.09993Z" fill="black" /></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card item  -->
+                            <div class="col-xl-3 col-lg-4 col-md-3 col-sm-2">
+                                <div class="product_card_item">
+                                    <div class="product_thumb">
+                                        <img src="assets/images/products/pd-g-6.svg" alt="Grofeed">
+                                    </div>
+                                    <div class="product_cnt">
+                                        <div class="product_cnt_text">
+                                            <h3><a href="#">Promo Code</a></h3>
+                                            <p>Create a own Payment page look Like a E-com store and Sell & Earn more.</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <a class="pd_remrbtn" href="#">
+                                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.4097 9.26408L13.2563 11.424L15.723 13.8868L9.25547 13.8943L9.25903 16.9764L15.7266 16.9689L13.2656 19.4374L15.4239 21.5924L21.5764 15.4211L15.4097 9.26408ZM15.399 0.017853C17.5292 0.0153905 19.5315 0.417599 21.406 1.22448C23.2804 2.03136 24.9114 3.12746 26.2989 4.51279C27.6864 5.89812 28.7855 7.52779 29.5961 9.40178C30.4067 11.2758 30.8132 13.2787 30.8157 15.4104C30.8181 17.5422 30.4162 19.546 29.61 21.4219C28.8037 23.2977 27.7084 24.9299 26.3241 26.3185C24.9398 27.707 23.3114 28.8069 21.4388 29.6181C19.5662 30.4293 17.5648 30.8361 15.4346 30.8386C13.3044 30.8411 11.3021 30.4389 9.42765 29.632C7.55319 28.8251 5.9222 27.729 4.5347 26.3437C3.1472 24.9583 2.04814 23.3287 1.23753 21.4547C0.426926 19.5807 0.0203897 17.5778 0.0179254 15.446C0.0154611 13.3143 0.417366 11.3104 1.22364 9.43458C2.02991 7.55872 3.1252 5.92652 4.50949 4.53798C5.89379 3.14945 7.52223 2.04957 9.39483 1.23836C11.2674 0.427152 13.2688 0.0203154 15.399 0.017853ZM15.4026 3.09993C11.9635 3.1039 9.0519 4.30157 6.66783 6.69294C4.28377 9.08431 3.09372 12.0008 3.0977 15.4425C3.10168 18.8841 4.29846 21.7979 6.68805 24.1837C9.07764 26.5696 11.992 27.7605 15.4311 27.7565C18.8701 27.7526 21.7817 26.5549 24.1658 24.1635C26.5498 21.7721 27.7399 18.8556 27.7359 15.414C27.7319 11.9723 26.5351 9.05859 24.1456 6.67274C21.756 4.28689 18.8416 3.09595 15.4026 3.09993Z" fill="black" /></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card item  -->
+                            <div class="col-xl-3 col-lg-4 col-md-3 col-sm-2">
+                                <div class="product_card_item">
+                                    <div class="product_thumb">
+                                        <img src="assets/images/products/pd-g-7.svg" alt="Grofeed">
+                                    </div>
+                                    <div class="product_cnt">
+                                        <div class="product_cnt_text">
+                                            <h3><a href="#">Affiliate Marketing </a></h3>
+                                            <p>Create a own Payment page look Like a E-com store and Sell & Earn more.</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <a class="pd_remrbtn" href="#">
+                                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.4097 9.26408L13.2563 11.424L15.723 13.8868L9.25547 13.8943L9.25903 16.9764L15.7266 16.9689L13.2656 19.4374L15.4239 21.5924L21.5764 15.4211L15.4097 9.26408ZM15.399 0.017853C17.5292 0.0153905 19.5315 0.417599 21.406 1.22448C23.2804 2.03136 24.9114 3.12746 26.2989 4.51279C27.6864 5.89812 28.7855 7.52779 29.5961 9.40178C30.4067 11.2758 30.8132 13.2787 30.8157 15.4104C30.8181 17.5422 30.4162 19.546 29.61 21.4219C28.8037 23.2977 27.7084 24.9299 26.3241 26.3185C24.9398 27.707 23.3114 28.8069 21.4388 29.6181C19.5662 30.4293 17.5648 30.8361 15.4346 30.8386C13.3044 30.8411 11.3021 30.4389 9.42765 29.632C7.55319 28.8251 5.9222 27.729 4.5347 26.3437C3.1472 24.9583 2.04814 23.3287 1.23753 21.4547C0.426926 19.5807 0.0203897 17.5778 0.0179254 15.446C0.0154611 13.3143 0.417366 11.3104 1.22364 9.43458C2.02991 7.55872 3.1252 5.92652 4.50949 4.53798C5.89379 3.14945 7.52223 2.04957 9.39483 1.23836C11.2674 0.427152 13.2688 0.0203154 15.399 0.017853ZM15.4026 3.09993C11.9635 3.1039 9.0519 4.30157 6.66783 6.69294C4.28377 9.08431 3.09372 12.0008 3.0977 15.4425C3.10168 18.8841 4.29846 21.7979 6.68805 24.1837C9.07764 26.5696 11.992 27.7605 15.4311 27.7565C18.8701 27.7526 21.7817 26.5549 24.1658 24.1635C26.5498 21.7721 27.7399 18.8556 27.7359 15.414C27.7319 11.9723 26.5351 9.05859 24.1456 6.67274C21.756 4.28689 18.8416 3.09595 15.4026 3.09993Z" fill="black" /></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="main-footer text-center">
+                <p>&copy; 2024 all Rights & Reserve Grofeed Technology India Private limited</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- JS Libraies -->
+    <script src="assets/bundle/jquery/jquery.min.js"></script>
+    <script src="assets/bundle/jquery-appear/jquery.appear.js"></script>
+    <script src="assets/bundle/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bundle/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bundle/swiper/js/swiper-bundle.min.js"></script>
+
+
+    <script src="assets/js/app.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="assets/bundle/apexcharts/apexcharts.min.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/index.js"></script>
+    <!-- Template JS File -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

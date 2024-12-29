@@ -973,3 +973,89 @@ input[type="number"]:nth-child(n+4) {
     border-color: #8bbafe;
     background-color: #FEF3DF;
 }
+
+
+/*=============================================== 
+/* ==== Product Page Css ==== 
+===============================================*/
+.product_page .navbar {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-content section.product_section {
+    padding: 30px 20px;
+    padding-bottom: 90px;
+    min-height: 80vh;
+}
+
+/*=============================================== 
+/* ==== Product Grid Css ==== 
+===============================================*/
+
+.product_card_item {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.product_thumb {
+    flex: 0 0 auto;
+    width: 83px;
+    text-align: center;
+}
+
+.product_cnt {
+    padding: 12px 10px 10px 5px;
+    flex: 0 0 auto;
+    width: calc(100% - 83px);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product_cnt h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.product_cnt h3 a {
+    color: inherit;
+    font-size: inherit
+}
+
+.product_cnt h3 a:hover {
+    color: #4429BA;
+}
+
+.product_cnt p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.product_cnt .pd_remrbtn {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.product_cnt .pd_remrbtn:hover svg path {
+    fill: #4429BA;
+}
