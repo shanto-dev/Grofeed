@@ -1,4 +1,100 @@
-.main-sidebar, .navbar, .main-content, .main-footer {
+.main-sidebar,
+.navbar,
+.main-content,
+.main-footer {
     transition: all 0.5s;
 }
 
+.font20px{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.38px;
+}
+.fontlabel{
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.btn-google,
+.btn-facebook {
+    padding: 8px 30px;
+    font-family: "Roboto Slab", serif;
+}
+.btn-google {
+    color: #fff;
+    background-color: #ea4335;
+    border-color: #fff;
+    margin-bottom: 4px;
+}
+
+.btn-google:hover {
+    color: #fff;
+    background-color: #e12717;
+    border-color: #e12717;
+}
+
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #fff;
+}
+
+.btn-facebook:hover {
+    color: #fff;
+    background-color: #30497c;
+    border-color: #30497c;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.user .btn-user {
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.userf_pass,
+.users_up {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #5218E5;
+}
+
+.userf_pass:hover,
+.users_up:hover {
+    color: #000000;
+}
+
+.user input {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, .25);
+    border-radius: 8px;
+    box-shadow: unset !important;
+    outline: unset !important;
+}
+
+.user input:focus {
+    border-color: #000000;
+}
+
+.user .user_loginBtn {
+    background: #5218e5e8;
+    padding: 8px 30px;
+    transition: 0.3s;
+}
+
+.user .user_loginBtn:hover {
+    background: #5218E5;
+    border-color: #5218E5;
+    transform: scale(1.004);
+}

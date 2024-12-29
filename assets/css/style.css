@@ -35,6 +35,11 @@ a {
     transition: 0.3s;
 }
 
+img {
+    max-width: 100%;
+    width: auto;
+}
+
 #app {
     overflow: hidden;
 }
@@ -260,7 +265,7 @@ a {
     align-items: center;
 }
 
-.sidebar-style-2 .sidebar-menu li:not(.menu-header) a:hover{
+.sidebar-style-2 .sidebar-menu li:not(.menu-header) a:hover {
     color: #4429BA !important;
 }
 
@@ -366,6 +371,7 @@ a {
 .sidebar-mini .main-sidebar .sidebar-menu>li>a {
     width: 46px;
     height: 28px;
+    margin-left: 0;
 }
 
 .sidebar-mini .main-sidebar .sidebar-menu>li>a img,
@@ -390,6 +396,7 @@ a {
 .sidebar-mini .main-sidebar .sidebar-menu-bottom li a {
     width: 46px;
     height: 32px;
+    margin-left: 0;
 }
 
 .sidebar-mini .main-sidebar .sidebar-menu-bottom li>a img,
@@ -428,7 +435,7 @@ body.sidebar-gone .main-sidebar {
     padding: 30px;
     min-height: 70vh;
     padding-bottom: 90px;
-    border:1px solid #000000;
+    border: 1px solid #000000;
 }
 
 /*=============================================== 
@@ -549,7 +556,8 @@ body.sidebar-gone .main-sidebar {
     padding: 5px 20px 5px 30px;
     transition: 0.3s;
 }
-.acitve_productList li a:hover{
+
+.acitve_productList li a:hover {
     color: #503295;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.20);
 }
@@ -596,7 +604,8 @@ body.sidebar-gone .main-sidebar {
     color: #FFFFFF;
     transition: 0.3s;
 }
-.more_summery:hover{
+
+.more_summery:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -643,4 +652,316 @@ body.sidebar-gone .main-sidebar {
 
 .product_row_heading a:hover {
     color: #4429BA;
+}
+
+
+
+
+/*=============================================== 
+/* ==== Login page Css ==== 
+===============================================*/
+.login_fream_wrap {
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    margin-top: 60px;
+    padding: 0 12px;
+    background: #FFFFFF;
+}
+
+.login_fream_wrap::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: calc(100% - 40px);
+    top: 20px;
+    background: #F1F1F1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-login-image {
+    background-image: url(../images/login-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom 15px center;
+    background-attachment: scroll;
+    background-size: calc(100% - 40px) auto;
+    border-radius: inherit;
+}
+
+.login_lContent {
+    position: relative;
+    padding: 48px 18px;
+}
+
+.login_lContent h3 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login_lContent ul li {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #4429BA;
+    position: relative;
+    padding-left: 28px;
+}
+
+.login_lContent ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.login_lContent ul li i {
+    position: absolute;
+    left: 0;
+    top: 4.5px;
+}
+
+
+.login_rContent {
+    position: relative;
+    padding: 48px 35px
+}
+
+.signup_mainContent h2,
+.login_rContent h2 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.signup_mainContent h2 {
+    line-height: 28px;
+}
+
+.signUpText {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.user .custom-checkbox {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.user .custom-checkbox input {
+    accent-color: #5218E5;
+}
+
+.privacy_text a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.privacy_text a:hover {
+    color: #5218E5;
+}
+
+/* Sing Up Page Start Css */
+.sign-up-section .sign-up-wraper {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin: 20px 5px;
+    background: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.signup-tab .btn {
+    cursor: none;
+}
+
+.signup-tab label {
+    cursor: pointer;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0;
+    --bs-nav-tabs-border-color: none;
+    --bs-nav-tabs-border-radius: none;
+    --bs-nav-tabs-link-hover-border-color: none;
+    --bs-nav-tabs-link-active-color: none;
+    --bs-nav-tabs-link-active-bg: none;
+    --bs-nav-tabs-link-active-border-color: none;
+    border-bottom: none;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.nav-link {
+    padding: 0;
+    margin-left: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav {
+    --bs-nav-link-color: none;
+}
+
+.nav:hover {
+    color: none !important;
+}
+
+.nav>.font20px {
+    margin-right: 12px;
+}
+
+input[type="radio"] {
+    height: 24px;
+    width: 24px;
+    accent-color: #5218E5;
+}
+
+.tab-content {
+    padding-top: 22px;
+}
+
+.nice-select {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, .25);
+    border-radius: 8px;
+    box-shadow: unset !important;
+    outline: unset !important;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.custom-btn-prymary {
+    background: #3854AD;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.38px;
+    text-align: center;
+    padding: 8px 20px;
+    width: 100%;
+}
+
+.custom-btn-prymary:hover {
+    background: #503295;
+    color: #FFFFFF;
+}
+
+.otp-popup-wrap {
+    text-align: center;
+}
+
+.otp-popup-wrap .font20px {
+    text-align: left !important;
+}
+
+.otp-popup-btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    background: #7451CD;
+    padding: 6px 15px;
+    color: #FFF;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+
+/* Otp */
+
+.otc {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.otc fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.otc fieldset div {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.otc legend {
+    margin: 0 auto 1em;
+    color: #fff;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 50px;
+    height: 40px;
+    line-height: 1;
+    margin: .1em;
+    font-size: 26px;
+    text-align: center;
+    appearance: textfield;
+    -webkit-appearance: textfield;
+    border: 0;
+    color: #000;
+    border-radius: 6px;
+    background: #D9D9D9;
+    font-weight: 500;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* 2 groups of 3 items */
+input[type="number"]:nth-child(n+4) {
+    order: 2;
+}
+
+.otc div::before {
+    content: '';
+    height: 2px;
+    width: 12px;
+    margin: 0 .25em;
+    order: 1;
+    background: #fff;
+    border-radius: 2px;
+    opacity: .4;
+}
+
+.otp-popup-wrap fieldset label {
+    display: none;
+}
+
+.otp-code {
+    display: none;
+}
+
+.otp-code.active {
+    display: block;
 }

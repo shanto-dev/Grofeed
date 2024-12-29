@@ -7,6 +7,7 @@
         width: calc(100% - 72px);
     }
 }
+
 @media (max-width: 1500px) and (min-width: 1366px) {
     .deshboard_topCard .card-main-content h5 {
         margin-right: -24px;
@@ -31,6 +32,10 @@
 
     .acitve_productList li a {
         padding: 5px 20px 5px 25px;
+    }
+
+    .login_lContent {
+        padding: 48px 14px;
     }
 }
 
@@ -121,6 +126,12 @@
     }
 }
 
+@media(max-width: 991px) {
+    .login_fream_wrap::after {
+        display: none;
+    }
+}
+
 @media(max-width: 767px) {
 
     .pd_summary2 .col-lg-10,
@@ -193,5 +204,10 @@
     .navbar {
         padding: 15px 10px 17px 10px;
         height: auto;
+    }
+
+    .login_rContent {
+        position: relative;
+        padding: 32px 15px;
     }
 }
