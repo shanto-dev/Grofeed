@@ -744,8 +744,8 @@ body.sidebar-gone .main-sidebar {
 }
 
 .signup_mainContent h2 {
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 22px;
 }
 
 .signUpText {
@@ -840,7 +840,7 @@ input[type="radio"] {
 }
 
 .tab-content {
-    padding-top: 12px;
+    padding-top: 8px;
 }
 
 .nice-select {
@@ -858,11 +858,11 @@ input[type="radio"] {
 .custom-btn-prymary {
     background: #3854AD;
     color: #FFF;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26.38px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
     text-align: center;
-    padding: 8px 20px;
+    padding: 5px 20px;
     width: 100%;
 }
 
@@ -885,7 +885,7 @@ input[type="radio"] {
     line-height: 22px;
     text-align: center;
     background: #7451CD;
-    padding: 6px 15px;
+    padding: 5px 15px;
     color: #FFF;
     border-radius: 8px;
     border: 1px solid #000;
