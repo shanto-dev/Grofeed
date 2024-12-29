@@ -744,7 +744,8 @@ body.sidebar-gone .main-sidebar {
 }
 
 .signup_mainContent h2 {
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 24px;
 }
 
 .signUpText {
@@ -812,7 +813,7 @@ body.sidebar-gone .main-sidebar {
     color: #000 !important;
 }
 
-.nav-link {
+.signup-tab .nav-link {
     padding: 0;
     margin-left: 13px;
     display: flex;
@@ -833,13 +834,13 @@ body.sidebar-gone .main-sidebar {
 }
 
 input[type="radio"] {
-    height: 24px;
-    width: 24px;
+    height: 22px;
+    width: 22px;
     accent-color: #5218E5;
 }
 
 .tab-content {
-    padding-top: 22px;
+    padding-top: 12px;
 }
 
 .nice-select {
@@ -943,25 +944,32 @@ input[type="number"]:nth-child(n+4) {
     order: 2;
 }
 
-.otc div::before {
-    content: '';
-    height: 2px;
-    width: 12px;
-    margin: 0 .25em;
-    order: 1;
-    background: #fff;
-    border-radius: 2px;
-    opacity: .4;
+.sh_otp_input .sh_account_id {
+    display: flex;
+    column-gap: 5px;
+    max-width: 340px;
+    margin: 0 auto;
 }
 
-.otp-popup-wrap fieldset label {
-    display: none;
+.sh_otp_input .sh_account_id input {
+    width: 100%;
+    text-align: center;
 }
 
-.otp-code {
-    display: none;
+.sh_otp_input .form-group input {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    border: 1px solid transparent;
+    background: #FEF3DF;
+    color: #000;
+    border-radius: 10px;
+    padding: 4px 8px;
 }
 
-.otp-code.active {
-    display: block;
+.sh_otp_input input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #8bbafe;
+    background-color: #FEF3DF;
 }

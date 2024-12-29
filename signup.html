@@ -29,7 +29,7 @@
                 <div class="col-lg-10 col-xl-10">
                     <div class="sign-up-wraper">
                         <div class="row align-items-center">
-                            <div class="col-lg-5 px-4 py-2">
+                            <div class="col-lg-5 px-4 pb-2 pt-1">
                                 <div class="signup_mainContent">
                                     <h2 class="text-center mb-4">Welcome to Grofeed <br> Start with your account today.</h2>
                                     <ul class="nav nav-tabs signup-tab d-flex align-items-center" id="myTab" role="tablist">
@@ -51,51 +51,42 @@
                                         <div class="tab-pane fade show active" id="Creator-tab-pane" role="tabpanel" aria-labelledby="Creator-tab" tabindex="0">
                                             <form class="user">
                                                 <div class="form-group mb-2">
-                                                    <label for="fullname" class="fontlabel mb-2">Enter Your Full Name</label>
+                                                    <label for="fullname" class="fontlabel mb-1">Enter Your Full Name</label>
                                                     <input type="text" class="form-control form-control-user mb-2" id="fullname">
                                                 </div>
                                                 <div class="form-group mb-2">
-                                                    <label for="userloginNumber" class="fontlabel mb-2">Enter Your Mobile No</label>
+                                                    <label for="userloginNumber" class="fontlabel mb-1">Enter Your Mobile No</label>
                                                     <input type="tel" class="form-control form-control-user mb-2" id="userloginNumber" placeholder="1234567890" value="+91-">
 
                                                     <div class="form-group mb-2 otp-popup-wrap">
                                                         <div class="otp-popup">
-                                                            <button class="otp-popup-btn" data-toggle="modal" data-target="#modalPopup">Validate your number via OTP</button>
+                                                            <button type="button" class="otp-popup-btn" data-toggle="modal" data-target="#modalPopup">Validate your number via OTP</button>
                                                         </div>
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalPopup" tabindex="-1" role="dialog" aria-labelledby="modalPopupLable" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered" role="document">
                                                                 <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                                    </div>
                                                                     <div class="modal-body">
-                                                                        <div class="otp-code">
-                                                                            <p class="fontlabel mb-2">Enter OTP Send on number</p>
-                                                                            <fieldset>
-                                                                                <label for="otc-1">Number 1</label>
-                                                                                <label for="otc-2">Number 2</label>
-                                                                                <label for="otc-3">Number 3</label>
-                                                                                <label for="otc-4">Number 4</label>
-                                                                                <label for="otc-5">Number 5</label>
-                                                                                <label for="otc-6">Number 6</label>
 
-                                                                                <!-- https://developer.apple.com/documentation/security/password_autofill/enabling_password_autofill_on_an_html_input_element -->
-                                                                                <div>
-                                                                                    <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otc-1" required>
+                                                                        <!-- Otp input -->
+                                                                        <div class="sh_otp_input">
+                                                                            <div class="form-group mb-4 ">
+                                                                                <label for="sl_no" class="form-label">Enter Mobile Otp Number</label>
+                                                                                <div class="sh_account_id digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
 
-                                                                                    <!-- Autocomplete not to put on other input -->
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-2" required>
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-3" required>
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-4" required>
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-5" required>
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-6" required>
+                                                                                    <input type="text" id="digit-1" name="digit-1" data-next="digit-2">
+                                                                                    <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1">
+                                                                                    <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2">
+                                                                                    <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3">
+                                                                                    <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4">
+                                                                                    <input type="text" id="digit-6" name="digit-6" data-next="digit-7" data-previous="digit-5">
                                                                                 </div>
-                                                                            </fieldset>
+                                                                            </div>
                                                                         </div>
+                                                                        <!-- Otp input -->
                                                                     </div>
                                                                     <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                                        <button type="button" class="otp-popup-btn">Submit</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -103,16 +94,16 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group mb-2">
-                                                    <label for="emailId" class="fontlabel mb-2">Enter Your Email id</label>
+                                                    <label for="emailId" class="fontlabel mb-1">Enter Your Email id</label>
                                                     <input type="email" class="form-control form-control-user mb-2" id="emailId">
                                                 </div>
                                                 <div class="form-group mb-2">
-                                                    <label for="username" class="fontlabel mb-2">Create your Username</label>
+                                                    <label for="username" class="fontlabel mb-1">Create your Username</label>
                                                     <input type="text" class="form-control form-control-user mb-2" id="username">
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label for="niceselect" class="fontlabel mb-2">Select your goal</label>
+                                                    <label for="niceselect" class="fontlabel mb-1">Select your goal</label>
                                                     <select class="nice-select wide" id="niceselect">
                                                         <option value="1">Select Option 1</option>
                                                         <option value="2">Select Option 2</option>
@@ -131,51 +122,41 @@
 
                                             <form class="user">
                                                 <div class="form-group mb-2">
-                                                    <label for="fullname" class="fontlabel mb-2">Enter Your Full Name</label>
+                                                    <label for="fullname" class="fontlabel mb-1">Enter Your Full Name</label>
                                                     <input type="text" class="form-control form-control-user mb-2" id="fullname">
                                                 </div>
                                                 <div class="form-group mb-2">
-                                                    <label for="userloginNumber" class="fontlabel mb-2">Enter Your Mobile No</label>
+                                                    <label for="userloginNumber" class="fontlabel mb-1">Enter Your Mobile No</label>
                                                     <input type="tel" class="form-control form-control-user mb-2" id="userloginNumber" placeholder="1234567890" value="+91-">
 
                                                     <div class="form-group mb-2 otp-popup-wrap">
                                                         <div class="otp-popup">
-                                                            <button class="otp-popup-btn" data-toggle="modal" data-target="#modalPopup2">Validate your number via OTP</button>
+                                                            <button type="button" class="otp-popup-btn" data-toggle="modal" data-target="#modalPopup2">Validate your number via OTP</button>
                                                         </div>
                                                         <!-- Modal -->
-                                                        <div class="modal fade" id="modalPopup2" tabindex="-1" role="dialog" aria-labelledby="modalPopupLable" aria-hidden="true">
+                                                        <div class="modal fade" id="modalPopup2" tabindex="-1" role="dialog" aria-labelledby="modalPopupLable2" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered" role="document">
                                                                 <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                                    </div>
                                                                     <div class="modal-body">
-                                                                        <div class="otp-code">
-                                                                            <p class="fontlabel mb-2">Enter OTP Send on number</p>
-                                                                            <fieldset>
-                                                                                <label for="otc-1">Number 1</label>
-                                                                                <label for="otc-2">Number 2</label>
-                                                                                <label for="otc-3">Number 3</label>
-                                                                                <label for="otc-4">Number 4</label>
-                                                                                <label for="otc-5">Number 5</label>
-                                                                                <label for="otc-6">Number 6</label>
+                                                                        <!-- Otp input -->
+                                                                        <div class="sh_otp_input">
+                                                                            <div class="form-group mb-4 ">
+                                                                                <label for="sl_no" class="form-label">Enter Mobile Otp Number</label>
+                                                                                <div class="sh_account_id digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
 
-                                                                                <!-- https://developer.apple.com/documentation/security/password_autofill/enabling_password_autofill_on_an_html_input_element -->
-                                                                                <div>
-                                                                                    <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otc-1" required>
-
-                                                                                    <!-- Autocomplete not to put on other input -->
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-2" required>
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-3" required>
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-4" required>
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-5" required>
-                                                                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otc-6" required>
+                                                                                    <input type="text" id="digit-1" name="digit-1" data-next="digit-2">
+                                                                                    <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1">
+                                                                                    <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2">
+                                                                                    <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3">
+                                                                                    <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4">
+                                                                                    <input type="text" id="digit-6" name="digit-6" data-next="digit-7" data-previous="digit-5">
                                                                                 </div>
-                                                                            </fieldset>
+                                                                            </div>
                                                                         </div>
+                                                                        <!-- Otp input -->
                                                                     </div>
                                                                     <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                                        <button type="button" class="otp-popup-btn">Submit</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -183,16 +164,16 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group mb-2">
-                                                    <label for="emailId" class="fontlabel mb-2">Enter Your Email id</label>
+                                                    <label for="emailId" class="fontlabel mb-1">Enter Your Email id</label>
                                                     <input type="email" class="form-control form-control-user mb-2" id="emailId">
                                                 </div>
                                                 <div class="form-group mb-2">
-                                                    <label for="username" class="fontlabel mb-2">Create your Username</label>
+                                                    <label for="username" class="fontlabel mb-1">Create your Username</label>
                                                     <input type="text" class="form-control form-control-user mb-2" id="username">
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label for="niceselect" class="fontlabel mb-2">Select your goal</label>
+                                                    <label for="niceselect" class="fontlabel mb-1">Select your goal</label>
                                                     <select class="nice-select wide" id="niceselect">
                                                         <option value="1">Select Option 1</option>
                                                         <option value="2">Select Option 2</option>
@@ -239,80 +220,6 @@
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/custom.js"></script>
-
-    <script>
-        let in1 = document.getElementById('otc-1'),
-            ins = document.querySelectorAll('input[type="number"]'),
-            splitNumber = function (e) {
-                let data = e.data || e.target.value; // Chrome doesn't get the e.data, it's always empty, fallback to value then.
-                if (!data) return; // Shouldn't happen, just in case.
-                if (data.length === 1) return; // Here is a normal behavior, not a paste action.
-
-                popuNext(e.target, data);
-                //for (i = 0; i < data.length; i++ ) { ins[i].value = data[i]; }
-            },
-            popuNext = function (el, data) {
-                el.value = data[0]; // Apply first item to first input
-                data = data.substring(1); // remove the first char.
-                if (el.nextElementSibling && data.length) {
-                    // Do the same with the next element and next data
-                    popuNext(el.nextElementSibling, data);
-                }
-            };
-
-        ins.forEach(function (input) {
-            /**
-             * Control on keyup to catch what the user intent to do.
-             * I could have check for numeric key only here, but I didn't.
-             */
-            input.addEventListener('keyup', function (e) {
-                // Break if Shift, Tab, CMD, Option, Control.
-                if (e.keyCode === 16 || e.keyCode == 9 || e.keyCode == 224 || e.keyCode == 18 || e.keyCode == 17) {
-                    return;
-                }
-
-                // On Backspace or left arrow, go to the previous field.
-                if ((e.keyCode === 8 || e.keyCode === 37) && this.previousElementSibling && this.previousElementSibling.tagName === "INPUT") {
-                    this.previousElementSibling.select();
-                } else if (e.keyCode !== 8 && this.nextElementSibling) {
-                    this.nextElementSibling.select();
-                }
-
-                // If the target is populated to quickly, value length can be > 1
-                if (e.target.value.length > 1) {
-                    splitNumber(e);
-                }
-            });
-
-            /**
-             * Better control on Focus
-             * - don't allow focus on other field if the first one is empty
-             * - don't allow focus on field if the previous one if empty (debatable)
-             * - get the focus on the first empty field
-             */
-            input.addEventListener('focus', function (e) {
-                // If the focus element is the first one, do nothing
-                if (this === in1) return;
-
-                // If value of input 1 is empty, focus it.
-                if (in1.value == '') {
-                    in1.focus();
-                }
-
-                // If value of a previous input is empty, focus it.
-                // To remove if you don't wanna force user respecting the fields order.
-                if (this.previousElementSibling.value == '') {
-                    this.previousElementSibling.focus();
-                }
-            });
-        });
-
-        /**
-         * Handle copy/paste of a big number.
-         * It catches the value pasted on the first field and spread it into the inputs.
-         */
-        in1.addEventListener('input', splitNumber);
-    </script>
 </body>
 
 </html>
